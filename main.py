@@ -39,7 +39,7 @@ class Config:
                 self.server_public_key = line.split('server public key: ')[1]
 
 
-@app.post("/add_peer")
+@app.get("/add_peer")
 def run_add_peer_script():
     # script_path = '/Users/admin/Desktop/wg-fake.sh'
     script_path = '/root/wg-peer.sh'
