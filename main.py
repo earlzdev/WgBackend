@@ -44,7 +44,7 @@ def run_add_peer_script():
     # script_path = '/Users/admin/Desktop/wg-fake.sh'
     script_path = '/root/wg-peer.sh add'
     try:
-        result = subprocess.check_output(['sh', script_path], universal_newlines=True)
+        result = subprocess.check_output([script_path], universal_newlines=True)
         print(result)
         config_string = result
         config = Config(config_string)
@@ -63,4 +63,5 @@ def run_add_peer_script():
         return None
 
 if __name__ == '__main__':
-    run_add_peer_script()
+    print("")
+    # run_add_peer_script()
