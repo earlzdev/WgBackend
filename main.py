@@ -42,7 +42,7 @@ class Config:
 @app.post("/add_peer")
 def run_add_peer_script():
     # script_path = '/Users/admin/Desktop/wg-fake.sh'
-    script_path = '/root/wg-peer.sh add'
+    script_path = '/root/wg-peer.sh'
     try:
         result = subprocess.check_output([script_path], universal_newlines=True)
         print(result)
